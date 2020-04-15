@@ -1,1 +1,35 @@
-<p>github works!</p>
+<div class="pol">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Search</mat-label>
+            <input matInput placeholder="Enter the user..." type="text" name='username' ([ngModel])='username'>
+        </mat-form-field>
+        <button type="submit" (click)=getUser() class="bt-primary">Search</button>
+    </form>
+    <div>
+        <p>
+            {{user.login}}
+        </p>
+    </div>
+
+
+    <div class="row">
+        <hr>
+        <img class="rounded" src="" alt="">
+    </div>
+    <br>
+    <div class="row">
+        <div class="username">
+            <h1>
+                <strong>Username</strong>
+            </h1>
+            <p>{{user.login}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <h4>
+            <a href=""></a>
+        </h4>
+        <p></p>
+    </div>
+</div>
