@@ -32,3 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## License
 
+
+[MIT License](https://github.com/JeromeMberia/Profile-Finder/blob/master/LICENSE)
+
+Copyright (c) 2020 Jerome Mberia
