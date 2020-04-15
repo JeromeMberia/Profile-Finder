@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This application allows user to search through other GitHub users profiles and see their repositories with their link displayed with the profile photo.
 
-[Live Link.](https://github.com/JeromeMberia/Profile-Finder/src/)
+
 
 ## Development server
 
