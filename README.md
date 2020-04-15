@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This application allows user to search through other GitHub users profiles and see their repositories with their link displayed with the profile photo.
 
+[Live Link.](https://github.com/JeromeMberia/Profile-Finder/src/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
