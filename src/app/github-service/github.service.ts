@@ -24,18 +24,18 @@ export class GithubService {
     login: any;
   }
 
-  //   const promise = new Promise((resolve, reject) => {
-  //   this.http.get<ApiResponse>(this.apiURL + username + '?access_token=' + environment.tokenReference).toPromise().then(response => {
-  //     this.user.login = response.login;
-  //     console.log(response.login);
-  //     resolve();
-  //   },
-  //   error => {
-  //     this.user.login = 'JeromeMberia';
-  //     reject(error);
-  //   });
-  // });
-  //   return promise;
-  // }
+    const promise = new Promise((resolve, reject) => {
+    this.http.get<ApiResponse>(this.apiURL + username + '?access_token=' + environment.tokenReference).toPromise().then(response => {
+      this.user.login = response.login;
+      console.log(response.login);
+      resolve();
+    },
+    error => {
+      this.user.login = 'JeromeMberia';
+      reject(error);
+    });
+  });
+    return promise;
+  }
 }
-}
+
