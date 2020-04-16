@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { GithubService } from '../github-service/github.service';
-import { User } from '../user';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-github',
@@ -10,19 +9,21 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubComponent implements OnInit {
 
-  @Input()
-  user: User;
-  username = '';
+    // tslint:disable-next-line:variable-name
+    constructor(private githubService: GithubService) {
 
-  constructor(private githubService: GithubService, private http: HttpClient) {
+    }
 
-  }
+user: String[];
 
-  getUser() {
-    this.githubService.userRequest(this.username);
-  }
+getUsers(){
 
+  this.githubService.getData().subscribe((data) =>{
+    console.log(data)
+  })
+
+}
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-
 }
