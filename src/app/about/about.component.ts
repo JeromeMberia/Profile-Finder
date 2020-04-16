@@ -1,3 +1,4 @@
+import { About } from './../about';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+
+  // about: About =
+  //    new Date(2020, 3, 14
+  //   ) ;
 
   constructor() { }
 
