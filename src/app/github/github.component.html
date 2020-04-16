@@ -2,24 +2,24 @@
     <form class="example-form">
         <mat-form-field class="example-full-width">
             <mat-label>Search</mat-label>
-            <input matInput placeholder="Enter the user..." name='username' ([ngModel])='user'>
+            <input matInput placeholder="Enter the user..." name='username' ([ngModel])='username'>
         </mat-form-field>
-        <button type="submit" (click)="getUsers()" class=" bt-primary ">Search</button>
+        <button type="submit" (click)=getUser() class="bt-primary">Search</button>
     </form>
     <div>
         <p>
-            <!-- {{user.login}} -->
+            {{user.login}}
         </p>
     </div>
 
 
-    <div class="row ">
+    <div class="row">
         <hr>
-        <img class="rounded " src="http://dummyimage.com/600x400/000/00ffd5.png " alt=" ">
+        <img class="rounded" src="http://dummyimage.com/600x400/000/00ffd5.png" alt="">
     </div>
     <br>
-    <div class="row ">
-        <div class="username ">
+    <div class="row">
+        <div class="username">
             <h1>
                 <strong>Username</strong>
             </h1>
@@ -27,8 +27,8 @@
         </div>
     </div>
     <hr>
-    <div class="row ">
-        <div class="center ">
+    <div class="row">
+        <div class="center">
             <h2>
                 <strong>Repositories</strong>
             </h2>
@@ -36,7 +36,7 @@
         <div>
             <hr>
             <h4>
-                <a href=" "></a>
+                <a href=""></a>
             </h4>
             <p></p>
         </div>
