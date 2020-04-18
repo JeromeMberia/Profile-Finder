@@ -7,14 +7,16 @@ export class HighlightDirective {
 
    constructor(private elem: ElementRef) {}
 
-//   @HostListener('click') onClicks() {
-//     this.textDeco('line-through');
-//   }
+   private highlight(color: string) {
+    this.elem.nativeElement.style.backgroundColor = color;
+  }
 
+   @HostListener('mouseenter') onMouseEnter() {
+    this.highlight('black');
+  }
 
-//   @HostListener('dblclick') onDoubleClicks() {
-//     this.textDeco('None');
-//   }
-//  }
+  @HostListener('mouseleave') onMouseLeave() {
+    this.highlight(null);
+  }
 
 }

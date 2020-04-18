@@ -1,3 +1,8 @@
 export class User {
-  constructor(public login: string ) {}
+  [x: string]: string;
+  constructor(
+    public username: string,
+    public url: string,
+    public image: string
+    ) {}
 }

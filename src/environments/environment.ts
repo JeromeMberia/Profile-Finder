@@ -6,7 +6,7 @@
 
 export const environment = {
   production: false,
-  tokenReference: 'a2dd4b454e3bc2d0103e412be7ec389aa198bcdd'
+  tokenReference: 'ac8f807f193466324dd7a99fff65aad322df98ab'
 };
 
 /*

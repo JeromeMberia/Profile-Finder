@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { GithubService } from '../github-service/github.service';
 import { User } from '../user';
 import { HttpClient } from '@angular/common/http';
@@ -10,19 +10,25 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubComponent implements OnInit {
 
-  @Input()
-  user: User;
-  username = '';
 
-  constructor(private githubService: GithubService, private http: HttpClient) {
+  @Output() searchUser = new EventEmitter();
 
+  Users = [];
+  Username: string;
+
+  constructor(private githubService: GithubService) { }
+
+  userName() {
+    this.githubService.getUser(this.Username);
+    this.githubService.userRequest();
   }
 
-  getUser() {
-    this.githubService.userRequest(this.username);
+
+
+
+  ngOnInit() {
+    this.Users = this.githubService.users;
   }
 
-  ngOnInit(): void {
-  }
 
 }

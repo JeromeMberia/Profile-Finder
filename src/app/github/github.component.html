@@ -2,44 +2,53 @@
     <form class="example-form">
         <mat-form-field class="example-full-width">
             <mat-label>Search</mat-label>
-            <input matInput placeholder="Enter the user..." name='username' ([ngModel])='username'>
+            <input matInput placeholder="Search" type="text" name="Username" class="form-control" [(ngModel)]='Username'>
         </mat-form-field>
-        <button type="submit" (click)=getUser() class="bt-primary">Search</button>
+
+        <div class="example-button-row">
+            <button mat-raised-button color="primary" (click)="userName()">Search</button>
+        </div>
     </form>
+
     <div>
         <p>
-            {{user.login}}
+
         </p>
     </div>
 
+    <div *ngFor="let User of Users">
 
-    <div class="row">
-        <hr>
-        <img class="rounded" src="http://dummyimage.com/600x400/000/00ffd5.png" alt="">
-    </div>
-    <br>
-    <div class="row">
-        <div class="username">
-            <h1>
-                <strong>Username</strong>
-            </h1>
-            <p>JeromeMberia</p>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="center">
-            <h2>
-                <strong>Repositories</strong>
-            </h2>
-        </div>
-        <div>
+        <div class="row ">
             <hr>
-            <h4>
-                <a href=""></a>
-            </h4>
-            <p></p>
+            <img class="rounded " src="{{User.image}} " alt=" ">
         </div>
+        <br>
+        <div class="row ">
+            <div class="username ">
+                <h1>
+                    <strong>Username</strong>
+                </h1>
+                <p>
+                    {{User.username}}
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row ">
+            <div class="center ">
+                <h2>
+                    <strong>Repositories</strong>
+                </h2>
+            </div>
+            <!-- <div *ngFor='let repo of request.repos$ ; let i = index' class="list-group ">
+              <hr>
+              <h4>
+                   <a href="{{request.repos$[i].html_url}} ">{{i+1}} . {{request.repos$[i].name}}</a>
+          </h4>
+          <p></p>
+      </div> -->
 
+        </div>
     </div>
+
 </div>
