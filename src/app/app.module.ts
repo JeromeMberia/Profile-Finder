@@ -13,7 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { CountPipe } from './count.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { FormComponent } from './form/form.component';
+
 
 
 @NgModule({
@@ -23,8 +23,7 @@ import { FormComponent } from './form/form.component';
     GithubComponent,
     NavbarComponent,
     CountPipe,
-    HighlightDirective,
-    FormComponent
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
