@@ -23,12 +23,7 @@ export class GithubComponent implements OnInit {
     this.githubService.userRequest();
   }
 
-
-
-
   ngOnInit() {
     this.Users = this.githubService.users;
   }
-
-
 }
