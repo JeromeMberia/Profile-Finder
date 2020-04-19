@@ -11,6 +11,11 @@
       <p class="small">
         By Wikipedia
       </p>
-    </code>
 
+      <div *ngFor='let date of dates;let i = index'>
+        <ul>
+          <li>{{date | date | count}}</li>
+        </ul>
+      </div>
+    </code>
 </div>

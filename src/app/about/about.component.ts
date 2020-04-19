@@ -1,4 +1,3 @@
-import { About } from './../about';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-
+  dates: Date[] = [ new Date(new Date(2007, 9, 19))];
 
   constructor() { }
 
