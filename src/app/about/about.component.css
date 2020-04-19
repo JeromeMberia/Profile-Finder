@@ -33,3 +33,7 @@
     code:hover {
         visibility: visible;
     }
+
+    small {
+        font-size: xx-small;
+    }
